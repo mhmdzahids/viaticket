@@ -1,0 +1,24 @@
+/* Smooth navbar collapse transition */
+.navbar-collapse {
+    transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-collapse.collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.navbar-collapse.show {
+    height: auto;
+    opacity: 1;
+}
+
+/* Improving toggler button transition */
+.navbar-toggler {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    transition: all 0.3s ease-in-out;
+}
